@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.CompareTag("Pick up"))
+        if(other.gameObject.CompareTag("Pickup"))
         {
             Destroy(other.gameObject);
             gameOverText.SetActive(true);
